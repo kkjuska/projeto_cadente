@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root { 
+    --text: #6b6375;
+    --text-h: #08060d;
+    --bg: #171717; /* Ajustado para começar no dark por padrão */
+    --border: #e5e4e7;
+    --code-bg: #f4f3ec;
+    --accent: #aa3bff;
+    --accent-bg: rgba(170, 59, 255, 0.1);
+    --accent-border: rgba(170, 59, 255, 0.5);
+    --social-bg: #1d1d1d;
+    --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+    --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
+
+    font: 18px/145% var(--sans);
+    letter-spacing: 0.18px;
+    color-scheme: dark;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  /* RESET COMPLETO PARA TELA CHEIA (O segredo está aqui) */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #171717;
+    overflow: hidden; /* Remove barras de rolagem globais sobressalentes */
+  }
+
+  /* Libera o container do React para colar 100% nas bordas da tela */
+  #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  h1, h2 {
+    font-family: var(--heading);
+    font-weight: 500;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  code {
+    font-family: var(--mono);
+    font-size: 15px;
+    line-height: 135%;
+    padding: 4px 8px;
+    background: var(--code-bg);
+    display: inline-flex;
+    border-radius: 4px;
+  }
+}
