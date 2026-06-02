@@ -4,6 +4,7 @@ import Layout from './Layout.jsx' // Importa o novo Layout unificado
 import Dashboard from './dashboard.jsx'
 import Dashboard2 from './dashboard2.jsx'
 import Perfil from './perfil.jsx'
+import Flashcard from './flashcard.jsx'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard2" element={<Dashboard2 />} />
+          <Route path="/flashcard" element={<Flashcard />} />
           <Route path="/perfil" element={<Perfil />} />
         </Route>
       </Routes>

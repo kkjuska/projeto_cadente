@@ -7,7 +7,7 @@ export default function Dashboard2() {
     { id: 2, nome: 'Matematica', sigla: 'MAT', progresso: '00/00' },
     { id: 3, nome: 'Português', sigla: 'POR', progresso: '00/00' },
     { id: 4, nome: 'Geografia', sigla: 'GEO', progresso: '00/00' },
-    { id: 5, nome: 'Biologia', sigla: 'BIO', progresso: '00/00' },
+    { id: 5 , nome: 'Biologia', sigla: 'BIO', progresso: '00/00' },
   ]);
 
   const [maisNovas] = useState([

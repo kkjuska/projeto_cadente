@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom' // Importado para gerenciar a navegação
 
 export default function Dashboard() {
   const [suasColecoes] = useState([
@@ -24,8 +25,20 @@ export default function Dashboard() {
 }
 
 function CardMateria({ item }) {
+  const navigate = useNavigate(); // Inicializa o hook de navegação
+
+  // Função que verifica se o card clicado é o de Biologia
+  const handleCliqueCard = () => {
+    if (item.nome === 'Biologia') {
+      navigate('/flashcard'); // Substitua pela rota correta configurada no seu App.jsx/main.jsx se for diferente
+    }
+  };
+
   return (
-    <div className="w-full aspect-[3/4] bg-neutral-800/40 rounded-2xl p-6 flex flex-col justify-between items-center text-center border border-neutral-800 hover:border-neutral-700/50 shadow-md cursor-pointer transition-all duration-200 hover:-translate-y-1">
+    <div 
+      onClick={handleCliqueCard} // Evento de clique adicionado aqui
+      className="w-full aspect-[3/4] bg-neutral-800/40 rounded-2xl p-6 flex flex-col justify-between items-center text-center border border-neutral-800 hover:border-neutral-700/50 shadow-md cursor-pointer transition-all duration-200 hover:-translate-y-1"
+    >
       <span className="text-sm font-semibold tracking-wide text-gray-300 truncate w-full px-1">{item.nome}</span>
       <span className="text-4xl font-black text-neutral-700/70 tracking-widest select-none">{item.sigla}</span>
       <span className="text-sm font-medium tracking-wide text-gray-400">{item.progresso}</span>
