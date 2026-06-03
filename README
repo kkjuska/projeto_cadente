@@ -1,23 +1,70 @@
-Nome do projeto: Cadente: Estude de forma rapida e eficiente.
+# Cadente 🌠
+> Estude de forma rápida e eficiente.
 
-Desafio abordado: O nosso desafio é facilitar os estudos para quem tem pouco tempo na rotina, consiga estudar de uma forma rápida e que permite a fixação do conteúdo;
+O **Cadente** é uma plataforma da web focada em otimizar o tempo de estudantes com rotinas corridas. O projeto transforma a revisão de conteúdos em um hábito diário e divertido através de técnicas de gamificação e o uso de flashcards, garantindo a fixação rápida e duradoura do aprendizado.
 
-Problema: A dificuldade em estudar assuntos diariamente, visando fazer um site que deixa o estudo divertido de se fazer;
+---
 
-Integrantes da equipe: Maria C. Macedo (Lider/PO), Joanna de S. Martins (Designer UI/UX), Lucas M. Sanatori (Dev. Front-End), Emanoel J. Pitrosky (Dev. Front-End), Pietra Kruger (Dev. Back-End), Pedro V. Carrâo (Dev. Back-End);
+## 🎯 Desafio e Problema
 
-Tecnologias utilizadas: React Vite, Tailwind, Express, React Router-Dom, PostgreSQL(pgAdmin);
+* **Desafio:** Facilitar o aprendizado de quem tem pouco tempo na rotina, permitindo o estudo rápido com alta fixação de conteúdo.
+* **Problema:** A dificuldade de manter a constância nos estudos diários por falta de estímulo e tempo.
 
-Funcionalidades implementadas: C.R.U.D, criação de flashcards e de coleções de flashcards;
+---
 
-Estrutura do banco de dados:
+## 👥 Equipe do Projeto
 
-Modelo de monetização: 
- Sistema de sequência/ofensiva,gamificação onde teria limite de 3 vidas/erros por dia, caso possua assinatura o usuário poderá ter vidas infinitas; 
+* **Maria C. Macedo** — Líder / Product Owner (PO)
+* **Joanna de S. Martins** — Designer UI/UX
+* **Lucas M. Sanatori** — Desenvolvedor Front-End
+* **Emanoel J. Pitrosky** — Desenvolvedor Front-End
+* **Pietra Kruger** — Desenvolvedora Back-End
+* **Pedro V. Carrâo** — Desenvolvedor Back-End
 
- Limitar as coleções onde caso não tenha a assinatura será possível fazer apenas 5 coleções e acessar apenas 1 coleção pública por dia;
+---
 
+## 🛠️ Tecnologias Utilizadas
 
-Instruções para execução local: Foi criado o banco de dados no mesmo pc que o site estava rodando para que usando um arquivo .env conseguissemos linkar o back-end do site e o banco de dados sem ter que subir o banco de dados para a internet.
+### Front-End
+* **React** (via **Vite**)
+* **Tailwind CSS**
+* **React Router-Dom**
 
-Link do deploy: 
+### Back-End e Banco de Dados
+* **Node.js** com **Express**
+* **PostgreSQL** (Gerenciado via **pgAdmin**)
+
+---
+
+## ⚙️ Funcionalidades Implementadas
+
+* **C.R.U.D. Completo:** Criação, leitura, atualização e exclusão de dados.
+* **Coleções:** Criação e organização de pastas/coleções temáticas.
+* **Flashcards:** Criação de cartões de memorização dinâmicos dentro das coleções.
+
+---
+
+## 💎 Modelo de Monetização e Regras de Negócio
+
+O sistema utiliza gatilhos de gamificação para incentivar a assinatura de um plano premium:
+
+### Usuários Gratuitos (Free)
+* **Sistema de Vidas:** Limite de 3 vidas (erros) por dia.
+* **Ofensiva:** Contagem de dias seguidos de estudo (streak) para manter o foco diário.
+* **Limitação de Criação:** Permite criar apenas 5 coleções próprias.
+* **Limitação de Navegação:** Permite o acesso a apenas 1 coleção pública por dia.
+
+### Usuários Assinantes (Premium)
+* **Vidas Infinitas:** Sem bloqueios por erros cometidos no dia.
+* **Acesso Ilimitado:** Sem travas para criação de coleções ou acesso a materiais públicos.
+
+---
+
+## 🖥️ Instruções para Execução Local
+
+Para rodar o projeto localmente de forma integrada, o banco de dados deve ser executado na mesma máquina que o servidor back-end.
+
+1. **Configuração do Banco de Dados:** Crie uma instância do banco PostgreSQL localmente utilizando o pgAdmin.
+2. **Variáveis de Ambiente:** Crie um arquivo `.env` na raiz do diretório do back-end.
+3. **Conexão Segura:** Insira as credenciais de acesso local do PostgreSQL no arquivo `.env` para realizar o vínculo sem expor os dados publicamente na internet.
+4. **Inicialização:** Inicie o servidor Node.js/Express e o servidor de desenvolvimento do React Vite.
