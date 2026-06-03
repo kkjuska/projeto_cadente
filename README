@@ -1,0 +1,23 @@
+Nome do projeto: Cadente: Estude de forma rapida e eficiente.
+
+Desafio abordado: O nosso desafio é facilitar os estudos para quem tem pouco tempo na rotina, consiga estudar de uma forma rápida e que permite a fixação do conteúdo;
+
+Problema: A dificuldade em estudar assuntos diariamente, visando fazer um site que deixa o estudo divertido de se fazer;
+
+Integrantes da equipe: Maria C. Macedo (Lider/PO), Joanna de S. Martins (Designer UI/UX), Lucas M. Sanatori (Dev. Front-End), Emanoel J. Pitrosky (Dev. Front-End), Pietra Kruger (Dev. Back-End), Pedro V. Carrâo (Dev. Back-End);
+
+Tecnologias utilizadas: React Vite, Tailwind, Express, React Router-Dom, PostgreSQL(pgAdmin);
+
+Funcionalidades implementadas: C.R.U.D, criação de flashcards e de coleções de flashcards;
+
+Estrutura do banco de dados:
+
+Modelo de monetização: 
+ Sistema de sequência/ofensiva,gamificação onde teria limite de 3 vidas/erros por dia, caso possua assinatura o usuário poderá ter vidas infinitas; 
+
+ Limitar as coleções onde caso não tenha a assinatura será possível fazer apenas 5 coleções e acessar apenas 1 coleção pública por dia;
+
+
+Instruções para execução local: Foi criado o banco de dados no mesmo pc que o site estava rodando para que usando um arquivo .env conseguissemos linkar o back-end do site e o banco de dados sem ter que subir o banco de dados para a internet.
+
+Link do deploy: 
